@@ -1,1 +1,134 @@
-[ ]
+[ {
+  "baseItem" : {
+    "id" : "_2v2vADX8EemnOcdmstsbBA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "MDM",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_4GfYcF4uEeq6mLT-OoWEIg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "SUNILJAGNANI_CI_CD_USING_JENKINS:_yaBk4F4uEeq6mLT-OoWEIg",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_DpitYGM6Eei2dIwxf0UwSQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "MDM",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_MCgVMFg-EeifmvXFZXoLjg - metadataCustomers",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_LJatEPSqEeiFhc4YRIn5Dw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "MDM",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_D0jQAOScEeaaN4bqKCHblw - StateCodesSchema",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_W8gSIDX8EemnOcdmstsbBA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "MDM",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_gKt5wDUuEemnOcdmstsbBA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "MDM",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_iVpysGUbEeqAXrndrRCHsw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "SUNILJAGNANI_CI_CD_USING_JENKINS:_yOskcGUaEeqAXrndrRCHsw",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_jlMDMDX3EemnOcdmstsbBA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "MDM",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_MCgVMFg-EeifmvXFZXoLjg - metadataCustomers",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_jlMDMDX3EemnOcdmstsbBA",
+    "version" : "1.0",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_MCgVMFg-EeifmvXFZXoLjg - metadataCustomers",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_sR0pEBjgEemaTZPhUoqjGA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "MDM",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_yaBk4F4uEeq6mLT-OoWEIg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "SUNILJAGNANI_CI_CD_USING_JENKINS:_uXZc8F4uEeq6mLT-OoWEIg",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+} ]
