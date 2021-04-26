@@ -10,33 +10,33 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
-    <module>jobs/process/GettingStarted/helloworld_0.1</module>
-    <module>jobs/process/nineth_job_0.1</module>
-    <module>jobs/process/Files/readxmlfile_0.1</module>
-    <module>jobs/process/GettingStarted/bestpractices_1.0</module>
-    <module>jobs/process/GettingStarted/wrong_bestpractices_0.1</module>
-    <module>jobs/process/Files/readdelimitedfile_0.1</module>
-    <module>jobs/process/first_job_0.1</module>
-    <module>jobs/process/sixth_job_0.1</module>
-    <module>jobs/process/Databases/readtable_0.1</module>
-    <module>jobs/process/Files/readjsonfile_0.1</module>
-    <module>jobs/process/Databases/createtable_0.1</module>
-    <module>jobs/process/BuildingJobs/printcustomers_1.0</module>
-    <module>jobs/process/eighth_job_0.1</module>
-    <module>jobs/process/Databases/databasesbestpractices_0.1</module>
-    <module>jobs/process/third_job_0.1</module>
-    <module>jobs/process/seventh_job_0.1</module>
-    <module>jobs/process/second_job_0.1</module>
-    <module>jobs/process/GettingStarted/bestpractices_0.1</module>
     <module>jobs/process/BuildingJobs/printcustomers_0.1</module>
+    <module>jobs/process/BuildingJobs/printcustomers_1.0</module>
+    <module>jobs/process/Databases/createtable_0.1</module>
+    <module>jobs/process/Databases/databasesbestpractices_0.1</module>
+    <module>jobs/process/Databases/readtable_0.1</module>
+    <module>jobs/process/Files/readdelimitedfile_0.1</module>
+    <module>jobs/process/Files/readjsonfile_0.1</module>
+    <module>jobs/process/Files/readxmlfile_0.1</module>
+    <module>jobs/process/GettingStarted/bestpractices_0.1</module>
+    <module>jobs/process/GettingStarted/bestpractices_1.0</module>
+    <module>jobs/process/GettingStarted/helloworld_0.1</module>
+    <module>jobs/process/GettingStarted/wrong_bestpractices_0.1</module>
     <module>jobs/process/HandlingErrors/handlingerrors_0.1</module>
+    <module>jobs/process/eighth_job_0.1</module>
+    <module>jobs/process/first_job_0.1</module>
+    <module>jobs/process/nineth_job_0.1</module>
+    <module>jobs/process/second_job_0.1</module>
+    <module>jobs/process/seventh_job_0.1</module>
+    <module>jobs/process/sixth_job_0.1</module>
+    <module>jobs/process/third_job_0.1</module>
   </modules>
   <properties>
-    <signer.version>7.3.1</signer.version>
     <talend.project.name>TMC_GIT</talend.project.name>
+    <signer.version>7.3.1</signer.version>
     <encoding>UTF-8</encoding>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
@@ -144,7 +144,7 @@
       <plugin>
         <groupId>org.talend.ci</groupId>
         <artifactId>builder-maven-plugin</artifactId>
-        <version>7.3.1</version>
+        <version>7.3.4</version>
         <executions>
           <execution>
             <phase>generate-sources</phase>
@@ -171,31 +171,42 @@
                   <groupId>io.fabric8</groupId>
                   <artifactId>docker-maven-plugin</artifactId>
                   <version>0.29.0</version>
+                  <exclusions>
+                    <exclusion>
+                      <artifactId>bcpkix-jdk15on</artifactId>
+                      <groupId>org.bouncycastle</groupId>
+                    </exclusion>
+                  </exclusions>
+                </dependency>
+                <dependency>
+                  <groupId>org.bouncycastle</groupId>
+                  <artifactId>bcpkix-jdk15on</artifactId>
+                  <version>1.68</version>
                 </dependency>
                 <dependency>
                   <groupId>com.fasterxml.jackson.core</groupId>
                   <artifactId>jackson-annotations</artifactId>
-                  <version>2.10.1</version>
+                  <version>2.11.4</version>
                 </dependency>
                 <dependency>
                   <groupId>com.fasterxml.jackson.core</groupId>
                   <artifactId>jackson-core</artifactId>
-                  <version>2.10.1</version>
+                  <version>2.11.4</version>
                 </dependency>
                 <dependency>
                   <groupId>com.fasterxml.jackson.core</groupId>
                   <artifactId>jackson-databind</artifactId>
-                  <version>2.10.1</version>
+                  <version>2.11.4</version>
                 </dependency>
                 <dependency>
                   <groupId>com.fasterxml.jackson.dataformat</groupId>
                   <artifactId>jackson-dataformat-yaml</artifactId>
-                  <version>2.10.1</version>
+                  <version>2.11.4</version>
                 </dependency>
                 <dependency>
                   <groupId>com.fasterxml.jackson.module</groupId>
                   <artifactId>jackson-module-jaxb-annotations</artifactId>
-                  <version>2.10.1</version>
+                  <version>2.11.4</version>
                 </dependency>
               </dependencies>
             </plugin>
@@ -222,6 +233,13 @@
                 </goals>
               </execution>
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcpkix-jdk15on</artifactId>
+                <version>1.68</version>
+              </dependency>
+            </dependencies>
             <configuration>
               <skip>${docker.skip}</skip>
               <autoPull>once</autoPull>
