@@ -10,7 +10,6 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
-    <module>jobs/process/eighth_job_0.1</module>
     <module>jobs/process/first_job_0.1</module>
   </modules>
   <properties>
