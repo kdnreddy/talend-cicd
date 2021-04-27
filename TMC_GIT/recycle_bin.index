@@ -1,19 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
-  <deletedFolders>process/BuildingJobs</deletedFolders>
-  <deletedFolders>process/Databases</deletedFolders>
-  <deletedFolders>process/Files</deletedFolders>
-  <deletedFolders>process/GettingStarted</deletedFolders>
-  <deletedFolders>process/HandlingErrors</deletedFolders>
-  <deletedItems id="_sR0pEBjgEemaTZPhUoqjGA" path="BuildingJobs" type="PROCESS"/>
-  <deletedItems id="_i7ZRUDaREem9e69tilXonQ" path="Databases" type="PROCESS"/>
-  <deletedItems id="_iQUJcDaQEem9e69tilXonQ" path="Databases" type="PROCESS"/>
-  <deletedItems id="_qFnxcDaTEem9e69tilXonQ" path="Databases" type="PROCESS"/>
-  <deletedItems id="_2v2vADX8EemnOcdmstsbBA" path="Files" type="PROCESS"/>
-  <deletedItems id="_W8gSIDX8EemnOcdmstsbBA" path="Files" type="PROCESS"/>
-  <deletedItems id="_hmn9YDX6EemnOcdmstsbBA" path="Files" type="PROCESS"/>
-  <deletedItems id="_DpitYGM6Eei2dIwxf0UwSQ" path="GettingStarted" type="PROCESS"/>
-  <deletedItems id="_gKt5wDUuEemnOcdmstsbBA" path="GettingStarted" type="PROCESS"/>
-  <deletedItems id="_jlMDMDX3EemnOcdmstsbBA" path="GettingStarted" type="PROCESS"/>
-  <deletedItems id="_LJatEPSqEeiFhc4YRIn5Dw" path="HandlingErrors" type="PROCESS"/>
-</recyclebin:RecycleBin>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin"/>
