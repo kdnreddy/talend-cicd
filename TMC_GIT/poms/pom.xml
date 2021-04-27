@@ -12,11 +12,6 @@
     <module>code/routines</module>
     <module>jobs/process/eighth_job_0.1</module>
     <module>jobs/process/first_job_0.1</module>
-    <module>jobs/process/nineth_job_0.1</module>
-    <module>jobs/process/second_job_0.1</module>
-    <module>jobs/process/seventh_job_0.1</module>
-    <module>jobs/process/sixth_job_0.1</module>
-    <module>jobs/process/third_job_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TMC_GIT</talend.project.name>
